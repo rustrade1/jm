@@ -6,6 +6,7 @@
 body{
 	background-color: #aeaeae;
 	font-family: 'TT Lakes',"Roboto", "Arial", sans-serif;
+	font-size: 16px;
 }
 
 
@@ -113,6 +114,7 @@ body{
 		-webkit-overflow-scrolling: touch;
 		max-width: 766px;
 		padding-bottom: 20px;
+		margin-left: 20px;
 	}
 	.text-contaner__read-more{
 		text-decoration: none;			
