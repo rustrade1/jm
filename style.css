@@ -269,7 +269,7 @@ body{
 		content: "";
 		display: block;
 	 	background-color: #41F6D7;
-	 	left: -20px;
+	 	left: 0;
 	 	border-top-right-radius: 5px;
 	 	border-bottom-right-radius: 5px;
 	}
