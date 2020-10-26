@@ -115,11 +115,7 @@ body{
 		max-width: 766px;
 		padding-bottom: 20px;
 		margin-left: 20px;
-	}
-	.text-contaner__read-more{
-		text-decoration: none;			
-		color: #1B1C21;		
-	}
+	}	
 	.text-contaner{
 		display: flex;
 		flex-direction: column;		
@@ -128,14 +124,31 @@ body{
 	.text-contaner__welcome-text{
 		order: 0;
 	}
+	.text-contaner__read-more-icon-btn{
+		background-image: url(img/icon-read-more.svg);	
+		height: 24px;
+		background-repeat: no-repeat;
+		background-position: 0px;
+		border: 0;
+		background-color: white;
+		font-size: 16px;
+		font-family: 'TT Lakes',"Roboto", "Arial", sans-serif;
+		font-weight:bold;
+		position: absolute;
+		left: 30px;
+		padding-left: 20px;
+	}
 	.text-contaner__read-more-contaner{
 		order:1;
 		margin-left: 10px;
-		margin-top: 20px;
+		margin-top: 0px;
+		padding: 20px 0px;
 	}
-	.text-contaner__read-more-icon{
-		margin-right:  10px;
+	.text-contaner__read-more-contaner:hover .text-contaner__read-more-icon-btn{
+		color: #FF3E79;
 	}
+
+
 	.text-contaner__image-block{
 		margin-top: 20px;
 		order: 3;
@@ -143,6 +156,52 @@ body{
 	.text-contaner__company-logo{
 		width: 100%;
 	}	
+	.top-header__btn-burger-icon{
+		background-color: #FF3E79;
+		height: 40px;
+		width: 40px;
+		background-image: url(img/burger-icon.svg) ;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		border:0px;
+		background-position: center;
+	}
+	.top-header__btn-burger-icon:hover{
+		opacity: 0.8;
+	}
+	.top-header__new-order-button{
+		background-color: #FF3E79;
+		height: 40px;
+		width: 40px;
+		background-image: url(img/repair.svg) ;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		border:0px;
+		background-position: center;
+	}
+	.top-header__new-order:hover a {
+		color: #FF3E79;	
+	}
+	.top-header__new-order:hover .top-header__new-order-button {		
+		opacity: 0.8;
+	}
+	
+	.top-header__check-status-button{
+		background-color: #FF3E79;
+		height: 40px;
+		width: 40px;
+		background-image: url(img/checkstatus.svg) ;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		border:0px;
+		background-position: center;
+	}
+	.top-header__check-status:hover a {
+		color: #FF3E79;	
+	}
+	.top-header__check-status:hover .top-header__check-status-button {
+		opacity: 0.8;
+	}
 }	
 
 @media (min-width: 768px) {
@@ -157,12 +216,46 @@ body{
 		margin-right: : 120px;		
 	}
 	.top-header__all-icons{
-		display: flex;			
+		display: flex;		
+		align-items: center;	
 	}	
-	.top-header__icon-call, .top-header__icon-mess, .top-header__icon-profile {
+	.top-header__btn-icon-call{
+		background-color: #FF3E79;
+		height: 40px;
+		width: 40px;
+		background-image: url(img/icon-call.svg) ;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		border:0px;
+		background-position: center;
+	}
+	.top-header__btn-icon-mess{
+		background-color: #FF3E79;
+		height: 40px;
+		width: 40px;
+		background-image: url(img/icon-mess.svg) ;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		border:0px;
+		background-position: center;
+	}
+	.top-header__btn-icon-profile{
+		background-color: #FF3E79;
+		height: 40px;
+		width: 40px;
+		background-image: url(img/people-icon.svg) ;
+		background-repeat: no-repeat;
+		border-radius: 20px;
+		border:0px;
+		background-position: center;
+	}
+	.top-header__btn-icon-call, .top-header__btn-icon-mess, .top-header__btn-icon-profile {
 		margin-right: 10px;
 	}
-	.top-header__icon-profile{
+	.top-header__btn-icon-call:hover, .top-header__btn-icon-mess:hover, .top-header__btn-icon-profile:hover {
+		opacity: 0.8;
+	}
+	.top-header__btn-icon-profile{
 		margin-right: 20px;
 	}
 	.top-header__burger-icon-block{
@@ -206,7 +299,6 @@ body{
 	.menu-contaner{		
 		max-width: 1119px;		
 	}
-
 }
 
 	@media (min-width: 1120px) {
@@ -248,11 +340,7 @@ body{
 	 }
 	 .top-header__title{
 	 	visibility: visible;	 	 	
-	 }
-	 .top-header__title-reserve{
-	 	white-space: nowrap;
-	 	font-size: 28px;	 	
-	 }
+	 }	 
 	 .title{
 	 	position: absolute;
 	 	top: 45px;	 	
