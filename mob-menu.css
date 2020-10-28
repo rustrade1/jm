@@ -136,7 +136,8 @@ body{
 .icons-call-mess-prof__prof-btn, 
 .burger-and-logo-cont__burger-icon, 
 .search-btn{
-
+	outline: none;
+	border: none;
 }
 .icons-call-mess-prof__call-btn:hover, 
 .icons-call-mess-prof__mess-btn:hover, 
