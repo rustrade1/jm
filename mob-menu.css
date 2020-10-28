@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{	
+	font-family: 'TT Lakes',"Roboto", "Arial", sans-serif;
+	font-size: 16px;
+}
+.mob-menu-block{
+	width: 320px;	
+	height: 1024px;
+	padding: 25px;
+	box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.top-icons{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.burger-and-logo-cont{
+	display: flex;
+}
+.burger-and-logo-cont__burger-icon{
+	background-color: #FF3E79;
+	height: 40px;
+	width: 40px;
+	background-image: url(img/buger-x.svg) ;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	border:0px;
+	background-position: center;
+	margin-right: 15px;
+	}
+.burger-and-logo-cont__burger-icon:hover{
+
+}	
+.search-btn{
+	background-color: #FF3E79;
+	height: 40px;
+	width: 40px;
+	background-image: url(img/search-icon.svg) ;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	border:0px;
+	background-position: center;
+}
+.menu-cont__list{
+	list-style: none;
+	position: relative;
+}
+.menu-cont__item{
+	margin-top: 32px;
+}
+.menu-cont__link{
+	text-decoration: none;
+	color:  #1B1C21;
+}
+.menu-cont__item:hover .menu-cont__link{
+	color:#FF3E79;
+}
+.menu-cont__link1{
+	color: #7E7E82;
+}
+.menu-cont__item1:before{
+	position: absolute;
+	top: -7px;
+	left: -25px;
+	height: 32px;
+	width: 4px;
+	content: "";
+	display: block;
+ 	background-color: #41F6D7;	 	
+ 	border-top-right-radius: 5px;
+ 	border-bottom-right-radius: 5px;	 
+}
+.icons-call-mess-prof__call-btn{
+	background-color: #FF3E79;
+	height: 40px;
+	width: 40px;
+	background-image: url(img/icon-call.svg) ;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	border:0px;
+	background-position: center;
+}
+.icons-call-mess-prof__mess-btn{
+	background-color: #FF3E79;
+	height: 40px;
+	width: 40px;
+	background-image: url(img/icon-mess.svg) ;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	border:0px;
+	background-position: center;
+}
+.icons-call-mess-prof__prof-btn{
+	background-color: #FF3E79;
+	height: 40px;
+	width: 40px;
+	background-image: url(img/people-icon.svg) ;
+	background-repeat: no-repeat;
+	border-radius: 20px;
+	border:0px;
+	background-position: center;
+}
+.mail-block{
+	margin-top: 15px;
+}
+.tel-number-block{
+	margin-top: 15px;
+}
+.change-lang-block{
+	margin-top: 30px;
+}
+.tel-number-block__tel-text{
+	font-size: 24px;
+	font-weight: bold;
+}
+.change-lang-block__item{
+	text-decoration: none;
+	color:#1B1C21;
+}
+.change-lang-block__item1{
+	color:#7E7E82;
+}
+.icons-call-mess-prof__call-btn, 
+.icons-call-mess-prof__mess-btn {
+	margin-right: 10px;
+}
+.icons-call-mess-prof__call-btn, 
+.icons-call-mess-prof__mess-btn, 
+.icons-call-mess-prof__prof-btn, 
+.burger-and-logo-cont__burger-icon, 
+.search-btn{
+
+}
+.icons-call-mess-prof__call-btn:hover, 
+.icons-call-mess-prof__mess-btn:hover, 
+.icons-call-mess-prof__prof-btn:hover, 
+.burger-and-logo-cont__burger-icon:hover, 
+.search-btn:hover {
+	opacity: 0.8;
+	transition-duration: 0.5s;
+}
