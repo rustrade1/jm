@@ -7,65 +7,44 @@ body{
 	font-family: 'TT Lakes',"Roboto", "Arial", sans-serif;
 	font-size: 16px;
 }
-.mob-menu-block{
-	width: 320px;	
-	height: 1024px;
+.section{
+	max-width: 320px;	
+	height: 100vh;
 	padding: 25px;
 	box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	overflow-y: auto;	
 }
-.top-icons{
+.header-wrapper{
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	align-items: center;
 }
-.burger-and-logo-cont{
+.header-button-wrapper{
 	display: flex;
+	align-items: center;
 }
-.burger-and-logo-cont__burger-icon{
-	background-color: #FF3E79;
-	height: 40px;
-	width: 40px;
-	background-image: url(img/buger-x.svg) ;
-	background-repeat: no-repeat;
-	border-radius: 20px;
-	border:0px;
-	background-position: center;
-	margin-right: 15px;
-	}
-.burger-and-logo-cont__burger-icon:hover{
-
-}	
-.search-btn{
-	background-color: #FF3E79;
-	height: 40px;
-	width: 40px;
-	background-image: url(img/search-icon.svg) ;
-	background-repeat: no-repeat;
-	border-radius: 20px;
-	border:0px;
-	background-position: center;
-}
-.menu-cont__list{
+.menu-list{
 	list-style: none;
 	position: relative;
 }
-.menu-cont__item{
+.menu-list__item{
 	margin-top: 32px;
 }
-.menu-cont__link{
+.menu-list__link{
 	text-decoration: none;
 	color:  #1B1C21;
 }
-.menu-cont__item:hover .menu-cont__link{
+.menu-list__item:hover .menu-list__link{
 	color:#FF3E79;
 }
-.menu-cont__link1{
+.menu-list__link--active{
 	color: #7E7E82;
 }
-.menu-cont__item1:before{
+.menu-list__item--active:before{
 	position: absolute;
 	top: -7px;
 	left: -25px;
@@ -77,17 +56,45 @@ body{
  	border-top-right-radius: 5px;
  	border-bottom-right-radius: 5px;	 
 }
-.icons-call-mess-prof__call-btn{
-	background-color: #FF3E79;
-	height: 40px;
-	width: 40px;
-	background-image: url(img/icon-call.svg) ;
-	background-repeat: no-repeat;
-	border-radius: 20px;
-	border:0px;
-	background-position: center;
+.info-bottom{
+	margin-top: 20px;
 }
-.icons-call-mess-prof__mess-btn{
+.mail-bottom{
+	margin-top: 15px;
+}
+.mail__e-mail{
+	text-decoration: none;
+	color:  #1B1C21;
+}
+.tel-number{
+	margin-top: 15px;
+}
+.change-lang-block{
+	margin-top: 30px;
+}
+.contacts__telephone{
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	color:  #1B1C21;
+}
+.link-wrapper__item{
+	text-decoration: none;
+	color:#1B1C21;
+}
+.link-wrapper__item--active{
+	color:#7E7E82;
+}
+.icon-buttons__call-btn, 
+.icon-buttons__mess-btn {
+	margin-right: 10px;
+}
+.button:hover{
+	opacity: 0.8;
+	transition-duration: 0.5s;
+	cursor:pointer; 
+}
+.button{
 	background-color: #FF3E79;
 	height: 40px;
 	width: 40px;
@@ -97,53 +104,19 @@ body{
 	border:0px;
 	background-position: center;
 }
-.icons-call-mess-prof__prof-btn{
-	background-color: #FF3E79;
-	height: 40px;
-	width: 40px;
+.header-button-wrapper__btn-icon{	
+	background-image: url(img/buger-x.svg) ;
+	margin-right: 15px;
+}	
+.header-wrapper__search-btn{	
+	background-image: url(img/search-icon.svg) ;	
+}
+.icon-buttons__call-btn{	
+	background-image: url(img/icon-call.svg) ;	
+}
+.icon-buttons__mess-btn{
+	background-image: url(img/icon-mess.svg) ;	
+}
+.icon-buttons__profile-btn{
 	background-image: url(img/people-icon.svg) ;
-	background-repeat: no-repeat;
-	border-radius: 20px;
-	border:0px;
-	background-position: center;
-}
-.mail-block{
-	margin-top: 15px;
-}
-.tel-number-block{
-	margin-top: 15px;
-}
-.change-lang-block{
-	margin-top: 30px;
-}
-.tel-number-block__tel-text{
-	font-size: 24px;
-	font-weight: bold;
-}
-.change-lang-block__item{
-	text-decoration: none;
-	color:#1B1C21;
-}
-.change-lang-block__item1{
-	color:#7E7E82;
-}
-.icons-call-mess-prof__call-btn, 
-.icons-call-mess-prof__mess-btn {
-	margin-right: 10px;
-}
-.icons-call-mess-prof__call-btn, 
-.icons-call-mess-prof__mess-btn, 
-.icons-call-mess-prof__prof-btn, 
-.burger-and-logo-cont__burger-icon, 
-.search-btn{
-	outline: none;
-	border: none;
-}
-.icons-call-mess-prof__call-btn:hover, 
-.icons-call-mess-prof__mess-btn:hover, 
-.icons-call-mess-prof__prof-btn:hover, 
-.burger-and-logo-cont__burger-icon:hover, 
-.search-btn:hover {
-	opacity: 0.8;
-	transition-duration: 0.5s;
 }

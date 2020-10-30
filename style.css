@@ -137,6 +137,7 @@ body{
 		position: absolute;
 		left: 30px;
 		padding-left: 20px;
+		background-color: transparent;
 	}
 	.text-contaner__read-more-contaner{
 		order:1;
@@ -168,6 +169,7 @@ body{
 	}
 	.top-header__btn-burger-icon:hover{
 		opacity: 0.8;
+		cursor: pointer;
 	}
 	.top-header__new-order-button{
 		background-color: #FF3E79;
@@ -184,6 +186,7 @@ body{
 	}
 	.top-header__new-order:hover .top-header__new-order-button {		
 		opacity: 0.8;
+		cursor: pointer;
 	}
 	
 	.top-header__check-status-button{
@@ -195,6 +198,7 @@ body{
 		border-radius: 20px;
 		border:0px;
 		background-position: center;
+		cursor: pointer;
 	}
 	.top-header__check-status:hover a {
 		color: #FF3E79;	
@@ -254,6 +258,7 @@ body{
 	}
 	.top-header__btn-icon-call:hover, .top-header__btn-icon-mess:hover, .top-header__btn-icon-profile:hover {
 		opacity: 0.8;
+		cursor: pointer;
 	}
 	.top-header__btn-icon-profile{
 		margin-right: 20px;
