@@ -1,0 +1,126 @@
+
+ html, body {
+     position: relative;     
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+    }
+ body {
+     background: #eee;
+     font-family: 'TT Lakes',"Roboto", "Arial", sans-serif; 	
+     font-size: 14px;
+     color: #000;     
+     background-color: #fff;
+ }
+ .swiper-container {
+     height: 152px;
+     width: 100%; 
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  border: 1px solid #EAEAEA;
+  height: 72px;
+  width: 240px !important; 
+  border-radius: 6px;
+}
+.swiper-slide__link{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+.iconArrow{
+     display: block;
+}
+
+.swiper-wrapper {
+     margin-left: 20px; 
+}
+.swiper-pagination{
+     margin-bottom:  40px;  
+}
+.title {
+     border-top: 1px solid #D9FFF5;  
+     margin-bottom: 30px;
+}
+.title__element{
+  font-size: 16px;
+  margin-left: 20px;
+  color:  #7E7E82;
+}
+
+ @media(max-width: 767px) {
+  .elements-wrapper{
+    display: none;
+  }
+ } 
+ @media(min-width: 768px) {
+  .elements-wrapper{
+    width: 100%;
+    height: 170px;
+    overflow: hidden;  
+  }
+  .element{
+    width:  240px;
+    background-color: #fff;
+    margin-left:  20px;
+    margin-bottom: 15px;
+    display: inline-block;
+    height: 72px;
+    vertical-align: middle;
+    border-radius: 6px;    
+    overflow: hidden;
+    border: 1px solid #EAEAEA;
+  }
+
+  .link {
+     display: inline-block;
+  }
+  .logo-wrapper{
+    background-color: white;    
+    display: flex;
+    height: 100%;
+    justify-content: space-between;    
+    align-items: center;
+    padding:0 15px;       
+  }
+  .button-wrapper__button{
+     border: none;
+     background-image: url(img/icon-read-more-show.svg);
+     background-repeat: no-repeat;
+     background-color: transparent;
+     margin-left: 20px;    
+     font-family: 'TT Lakes',"Roboto", "Arial", sans-serif;
+     background-position: 0px;
+     margin-left: 30px;
+     padding-left: 20px;
+     font-size: 16px;
+  }
+  .absolute-button{
+     position: absolute;
+     top: 245px;
+     left: 5px;
+     cursor: pointer;
+  }
+  .button_hide{
+      padding-left: 30px;
+      cursor: pointer;
+  }
+}  
